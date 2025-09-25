@@ -25,8 +25,8 @@ inject_page_styles(max_width=1100, padding="2rem")
 # -----------------------------
 # Load Data
 # -----------------------------
-DATA_PATH = "data/Tweets_ort.xlsx"
-PDF_PATH = "data/#Baseballschlägerjahre.Ostdeutschland erinnern.pdf"
+DATA_PATH = "data/tweets.xlsx"
+PDF_PATH = "data/#baseballschlaegerjahre.ostdeutschland erinnern.pdf"
 
 df_complete, df_with_loc, df_no_loc = load_dataframes(DATA_PATH)
 
