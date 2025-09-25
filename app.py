@@ -39,13 +39,10 @@ initial_state(df_with_loc, df_no_loc)
 # Page Content
 # -----------------------------
 headline("#Baseballschlägerjahre – ein Hashtag und seine Geschichten")
-
 render_intro()
 divider()
-
 map_and_tweet(df_with_loc)
 divider()
-
 expander_1()
 expander_2(df_no_loc)
 expander_3(pdf_path=PDF_PATH, zitation_text=ZITATION, email_text="hallo.friedemann(at)posteo.de")
