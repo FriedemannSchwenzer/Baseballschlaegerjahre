@@ -1,2 +1,2 @@
 # Baseballschlaegerjahre
-A streamlit app displaying Tweets on a map 
+Eine Streamlit App die #Baseballschlägerjahre interaktiv auf einer Karte anzeigt 
