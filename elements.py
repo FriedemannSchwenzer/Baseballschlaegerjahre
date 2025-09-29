@@ -145,7 +145,7 @@ def render_intro() -> None:
 # -----------------------------
 def map_and_tweet(df_with_loc: pd.DataFrame) -> None:
     """Zeigt links die Karte und rechts die aktuelle Tweet-Card."""
-    col_map, col_info = st.columns([1, 1], gap="large")
+    col_map, spacer, col_info = st.columns([1,0.02, 1])
 
     # --- Karte
     with col_map:
