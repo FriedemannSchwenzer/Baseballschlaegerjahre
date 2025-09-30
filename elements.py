@@ -264,7 +264,7 @@ def expander_3(pdf_path: str, zitation_text: str, email_text: str = "hallo.fried
         )
         st.code(zitation_text, language="text")
         st.markdown(" ")
-        st.markdown(f"Schreib mir gern eine Email an: {email_text}. ")
+        st.markdown(f"Ich freue mich auch über Emails an: {email_text}. ")
 
 # -----------------------------
 # Zitation
