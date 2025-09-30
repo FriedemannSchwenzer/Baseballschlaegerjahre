@@ -126,13 +126,13 @@ def tweet_card(tweet: str, author: str, date_str: str) -> None:
 # Intro
 # -----------------------------
 INTRO = [
-    """2019 war das 30. Jubiläumsjahr der Friedlichens Revolution. Doch ungetrübte Feierstimmung wollte nicht aufkommen. Der Mord an Walter Lübcke, der Anschlag von Halle und die Umfrageergebnisse der AfD – vor allem im Osten – prägten die Debatten. Das Erbe der Friedlichen Revolution, so schien es, musste neu verhandelt werden.""",
+    """2019 war das 30. Jubiläumsjahr der Friedlichen Revolution. Doch ungetrübte Feierstimmung wollte nicht aufkommen. Der Mord an Walter Lübcke, der Anschlag von Halle und die Umfrageergebnisse der AfD – vor allem im Osten – prägten die Debatten. Das Erbe der Friedlichen Revolution, so schien es, musste neu verhandelt werden.""",
     """Am 29. Oktober 2019 postete der Journalist Christian Bangel ein 
 <a href="https://www.freitag.de/autoren/hendrik-bolz/sieg-heil-rufe-wiegten-mich-in-den-schlaf"
 target="_blank" style="color:#0000fc; text-decoration:underline;">
 Essay</a> 
 des Rappers Hendrick Bolz auf Twitter. Es verhandelt eine von rechter Gewalt geprägte Jugend im Ostdeutschland der Nachwendezeit. Eine Generationenerfahrung.""",
-    """Hunderte Nutzer*innen folgten dem Aufruf Bangels und teilten ihre autobiographischen Erinnerungen unter dem Hashtag #Baseballschlägerjahre. Für meine Masterarbeit habe ich diese Tweets erhoben und ausgewertet. Hier sind die Geschichten und die Orte von Hashtag #Baseballschlägerjahre dokumentiert."""
+    """Hunderte Nutzer*innen folgten dem Aufruf Bangels und teilten ihre autobiographischen Erinnerungen unter dem Hashtag #Baseballschlägerjahre. Für meine Masterarbeit habe ich diese Tweets erhoben und ausgewertet. Hier sind diese Geschichten dokumentiert."""
 ]
 
 def render_intro() -> None:
