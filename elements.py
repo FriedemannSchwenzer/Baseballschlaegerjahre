@@ -132,7 +132,7 @@ INTRO = [
 target="_blank" style="color:#0000fc; text-decoration:underline;">
 Essay</a> 
 des Rappers Hendrick Bolz auf Twitter. Es verhandelt eine von rechter Gewalt geprägte Jugend im Ostdeutschland der Nachwendezeit. Eine Generationenerfahrung.""",
-    """Hunderte Nutzer*innen folgten dem Aufruf Bangels und teilten ihre autobiographischen Erinnerungen unter dem Hashtag #Baseballschlägerjahre. Für meine Masterarbeit habe ich diese Tweets erhoben und ausgewertet. Hier sind diese Geschichten dokumentiert."""
+    """Hunderte Nutzer*innen folgten dem Aufruf Bangels und teilten ihre autobiographischen Erinnerungen unter dem Hashtag #Baseballschlägerjahre. Für meine Masterarbeit habe ich diese Tweets erhoben und ausgewertet. Hier mache ich die Geschichten zugänglich."""
 ]
 
 def render_intro() -> None:
