@@ -238,8 +238,7 @@ def expander_3(pdf_path: str, zitation_text: str, email_text: str = "hallo.fried
     with st.expander("Was ist das für eine Masterarbeit? Und darf ich die lesen?", expanded=False):
         st.markdown(
             """
-            Die Masterarbeit *#Baseballschlägerjahre. Ostdeutschland erinnern* habe ich im Jahr 2021 
-            an der Universität Potsdam erfolgreich eingereicht.  
+            Die Masterarbeit *#Baseballschlägerjahre. Ostdeutschland erinnern* habe ich im Jahr 2021 an der Universität Potsdam eingereicht (und natürlich sehr gut bestanden).  
 
             Hier kannst Du sie herunterladen:
             """
