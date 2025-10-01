@@ -16,7 +16,7 @@ def load_dataframes(xlsx_path):
     # 2) Spaltennamen normalisieren
     df_complete.columns = df_complete.columns.str.strip().str.lower()
 
-    # 3) Orte bereinigen: "NAN" → echtes NaN
+    # 3) Orte bereinigen: "NAN" zu echtem Nullwert
     df_complete["ort"] = df_complete["ort"].replace("NAN", pd.NA)
 
     # 4) Lat/Lon aus "lat lon" extrahieren 
@@ -36,12 +36,12 @@ def load_dataframes(xlsx_path):
     df_with_loc = df_complete.dropna(subset=["ort"]).reset_index(drop=True)
     df_no_loc = df_complete[df_complete["ort"].isna()].copy()
 
-    # hier Dummy-Tweet einfügen
+    # Starttweet einfügen
     df_with_loc = add_start_tweet(df_with_loc)
 
     return df_complete, df_with_loc, df_no_loc
 
-
+#Setzt den Tweet von Christian Bangel als Starttweet
 def add_start_tweet(df_with_loc: pd.DataFrame) -> pd.DataFrame:
     """Fügt einen festen Start-Tweet als erste Zeile ein."""
 
@@ -57,8 +57,7 @@ def add_start_tweet(df_with_loc: pd.DataFrame) -> pd.DataFrame:
     for col in df_with_loc.columns:
         if col not in dummy_tweet.columns:
             dummy_tweet[col] = pd.NA
-
-    # gleiche Reihenfolge
+            
     dummy_tweet = dummy_tweet[df_with_loc.columns]
 
     return pd.concat([dummy_tweet, df_with_loc], ignore_index=True)
