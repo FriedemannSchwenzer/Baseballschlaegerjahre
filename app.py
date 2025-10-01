@@ -17,7 +17,7 @@ from elements import (
 # Page Layout
 # -----------------------------
 st.set_page_config(
-    page_title="#Baseballschlägerjahre – ein Hashtag und seine Geschichten",
+    page_title="#Baseballschlägerjahre – die Geschichten eines Hashtags",
     layout="centered",
 )
 inject_page_styles(max_width=1100, padding="2rem")
