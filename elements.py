@@ -131,7 +131,7 @@ INTRO = [
 <a href="https://www.freitag.de/autoren/hendrik-bolz/sieg-heil-rufe-wiegten-mich-in-den-schlaf"
 target="_blank" style="color:#0000fc; text-decoration:underline;">
 Essay</a> 
-des Rappers Hendrick Bolz auf Twitter. Es verhandelt eine von rechter Gewalt geprägte Jugend im Ostdeutschland der Nachwendezeit. Eine Generationenerfahrung.""",
+des Rappers Hendrick Bolz auf Twitter. Es beschreibt eine Jugend im Ostdeutschland der Nachwendezeit, geprägt von rechter Gewalt. Eine Generationenerfahrung.""",
     """Hunderte Nutzer*innen folgten dem Aufruf Bangels und teilten ihre autobiographischen Erinnerungen unter dem Hashtag #Baseballschlägerjahre. Für meine Masterarbeit habe ich diese Tweets erhoben und ausgewertet. Hier mache ich die Geschichten zugänglich."""
 ]
 
