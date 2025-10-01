@@ -45,20 +45,21 @@ def load_dataframes(xlsx_path):
 def add_start_tweet(df_with_loc: pd.DataFrame) -> pd.DataFrame:
     """Fügt einen festen Start-Tweet als erste Zeile ein."""
 
-    dummy_tweet = pd.DataFrame([{
-        "tweet": "Ihr Zeugen der Baseballschlägerjahre. Redet und schreibt von den Neunzigern und Nullern. It’s about time.",
-        "ort": "Start",
-        "lat lon": pd.NA,
-        "autor": "@christianbangel",
-        "datum_str": "29.10.2019"
-    }])
+    start_tweet = pd.DataFrame([{
+    "tweet": "Ihr Zeugen der Baseballschlägerjahre. Redet und schreibt von den Neunzigern und Nullern. It’s about time.",
+    "ort": "Start",
+    "lat lon": pd.NA,
+    "autor": "@christianbangel",
+    "datum": pd.to_datetime("2019-10-29"),
+    "datum_str": "29.10.2019"
+}])
 
     # sicherstellen, dass alle Spalten gleich sind
     for col in df_with_loc.columns:
-        if col not in dummy_tweet.columns:
-            dummy_tweet[col] = pd.NA
+        if col not in start_tweet.columns:
+            start_tweet[col] = pd.NA
             
-    dummy_tweet = dummy_tweet[df_with_loc.columns]
+    start_tweet = start_tweet[df_with_loc.columns]
 
-    return pd.concat([dummy_tweet, df_with_loc], ignore_index=True)
+    return pd.concat([start_tweet, df_with_loc], ignore_index=True)
 
