@@ -50,7 +50,7 @@ def add_start_tweet(df_with_loc: pd.DataFrame) -> pd.DataFrame:
         "ort": "Start",
         "lat lon": pd.NA,
         "autor": "@christianbangel",
-        "datum": "29.10.2019"
+        "datum_str": "29.10.2019"
     }])
 
     # sicherstellen, dass alle Spalten gleich sind
