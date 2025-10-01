@@ -199,9 +199,9 @@ def map_and_tweet(df_with_loc: pd.DataFrame) -> None:
         if idx is not None and not df_with_loc.empty:
             row = df_with_loc.loc[idx]
             tweet_card(
-            str(row.get("tweet", "")),
-            str(row.get("autor", "")),
-            row.get("datum", "").strftime("%d.%m.%Y") 
+                str(row.get("tweet", "")),
+                str(row.get("autor", "")),
+                str(row.get("datum", "")),
             )
 
 # -----------------------------
