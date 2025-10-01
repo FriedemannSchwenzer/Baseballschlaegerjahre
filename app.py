@@ -40,7 +40,7 @@ initial_state(df_with_loc, df_no_loc)
 # -----------------------------
 
 #Headline wird angezeigt 
-headline("#Baseballschlägerjahre – ein Hashtag und seine Geschichten")
+headline("#Baseballschlägerjahre – die Geschichten eines Hashtags")
 
 #Intro wird angezeigt 
 render_intro()
