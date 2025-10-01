@@ -27,8 +27,8 @@ def load_dataframes(xlsx_path):
 
 
     # 5) Datum formatieren
-    df_complete["datum"] = pd.to_datetime(df_complete["datum"], errors="coerce")
-    df_complete["datum_str"] = df_complete["datum"].dt.strftime("%d.%m.%Y")
+    df_complete["datum"] = pd.to_datetime(df_complete["datum"], errors="coerce").dt.strftime("%d.%m.%Y")
+
 
    
 
@@ -51,7 +51,6 @@ def add_start_tweet(df_with_loc: pd.DataFrame) -> pd.DataFrame:
     "lat lon": pd.NA,
     "autor": "@christianbangel",
     "datum": pd.to_datetime("2019-10-29"),
-    "datum_str": "29.10.2019"
 }])
 
     # sicherstellen, dass alle Spalten gleich sind
