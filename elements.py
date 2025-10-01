@@ -64,7 +64,7 @@ def inject_page_styles(max_width: int = 1100, padding: str = "2rem") -> None:
 # -----------------------------
 def initial_state(df_with_loc: pd.DataFrame, df_no_loc: pd.DataFrame) -> None:
     """Initialisiert Session State Variablen mit Defaults."""
-    st.session_state.setdefault("tweet_idx", 0)  # immer den Christian Bangel tweet nehmen
+    st.session_state.setdefault("tweet_idx", 0)  #Christian Bangels Tweet als Startpunkt nehmen
     st.session_state.setdefault(
         "rand_no_loc_idx",
         (None if df_no_loc.empty else df_no_loc.index[0])
@@ -73,18 +73,22 @@ def initial_state(df_with_loc: pd.DataFrame, df_no_loc: pd.DataFrame) -> None:
 # -----------------------------
 # Reusable Elements
 # -----------------------------
+
+#Ein Divider 
 def divider(color: str = ACCENT_BG, thickness: str = "2px", margin: str = "25px 0") -> None:
     st.markdown(
         f"""<hr style="border:none;border-top:{thickness} solid {color};margin:{margin};">""",
         unsafe_allow_html=True
     )
 
+# Überschriftenstil 
 def headline(text: str, margin_bottom: str = "35px") -> None:
     st.markdown(
         f"""<h1 style='margin-bottom:{margin_bottom};'>{text}</h1>""",
         unsafe_allow_html=True
     )
 
+#Absatzstil  
 def styled_paragraph(
     text: str,
     size: int = 20,
@@ -102,8 +106,9 @@ def styled_paragraph(
     )
 
 # -----------------------------
-# Card Renderer
+# Tweetcard 
 # -----------------------------
+
 def render_card(body_html: str, footer_html: str = "") -> None:
     st.markdown(
         f"""
