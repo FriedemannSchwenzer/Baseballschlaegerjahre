@@ -201,7 +201,7 @@ def map_and_tweet(df_with_loc: pd.DataFrame) -> None:
             tweet_card(
             str(row.get("tweet", "")),
             str(row.get("autor", "")),
-            row.get("datum", "").strftime("%d.%m.%Y") if not pd.isna(row.get("datum", "")) else ""
+            row.get("datum", "").strftime("%d.%m.%Y") 
             )
 
 # -----------------------------
