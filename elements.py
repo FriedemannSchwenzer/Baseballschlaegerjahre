@@ -201,7 +201,7 @@ def map_and_tweet(df_with_loc: pd.DataFrame) -> None:
             tweet_card(
                 str(row.get("tweet", "")),
                 str(row.get("autor", "")),
-                str(row.get("datum", "")),
+                str(row.get("datum_str", "")),
             )
 
 # -----------------------------
