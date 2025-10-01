@@ -132,7 +132,7 @@ INTRO = [
 target="_blank" style="color:#0000fc; text-decoration:underline;">
 Essay</a> 
 des Rappers Hendrick Bolz auf Twitter. Es beschreibt eine Jugend im Ostdeutschland der Nachwendezeit, geprägt von rechter Gewalt. Eine Generationenerfahrung.""",
-    """Hunderte Nutzer*innen folgten dem Aufruf Bangels und teilten ihre autobiographischen Erinnerungen unter dem Hashtag #Baseballschlägerjahre. Für meine Masterarbeit habe ich diese Tweets gesammelt und ausgewertet. Hier mache ich ihre Geschichten zugänglich."""
+    """Hunderte Nutzer*innen folgten dem Aufruf Bangels und teilten ihre autobiographischen Erinnerungen unter dem Hashtag #Baseballschlägerjahre. Für meine Masterarbeit habe ich diese Tweets gesammelt und ausgewertet. In dieser Webapp sind die ."""
 ]
 
 def render_intro() -> None:
@@ -238,7 +238,7 @@ def expander_3(pdf_path: str, zitation_text: str, email_text: str = "hallo.fried
     with st.expander("Was ist das für eine Masterarbeit? Und darf ich die lesen?", expanded=False):
         st.markdown(
             """
-            Die Masterarbeit *#Baseballschlägerjahre. Ostdeutschland erinnern* habe ich im Jahr 2021 an der Universität Potsdam eingereicht (und natürlich sehr gut bestanden).  
+            Die Masterarbeit *#Baseballschlägerjahre. Ostdeutschland erinnern* habe ich im Jahr 2021 an der Universität Potsdam eingereicht.  
 
             Hier kannst Du sie herunterladen:
             """
